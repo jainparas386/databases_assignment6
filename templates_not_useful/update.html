@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        .btncontainer{
+            padding : auto;
+            /* height : 1000px; */
+            /* background-color: aqua; */
+            width: 60%;
+        }
+        .center {
+            margin: auto;
+            /* align-items:  center; */
+            text-align: center;
+            width: 60%;
+            /* border: 5px solid #FFFF00; */
+            padding: auto;
+        }
+
+    </style>
+</head>
+<body style ="background-color:lightgoldenrodyellow;">
+    <div class="center">
+        <h1>FLASK</h1>
+        <h2>Update stuff here, </h2>
+        <br>
+        <form method = "POST" action="">
+            Write new Name <input type="text", name="name"/>
+            <br>
+            write old Email <input type = "email" name = "email" />
+            <br>
+            <br>
+            <input type = "submit">
+        </form>
+        <br>
+        <a href="/users"><button>See current database</button></a>
+        <a href="/delete"><button>Go to delete page</button></a>
+        <a href="/update"><button>Go to update page</button></a>
+    </div>
+</body>
+</html>
